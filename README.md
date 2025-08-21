@@ -12,18 +12,18 @@ SistemaGimnasio/
 │   │   ├── EjercicioBrazo.java       # ⚠️ Ya no se usa, opcional para pruebas
 │   │   ├── EjercicioCardio.java      # ⚠️ Ya no se usa, opcional para pruebas
 │   │   ├── EjercicioPierna.java      # ⚠️ Ya no se usa, opcional para pruebas
-│   │   ├── Rutina.java               # ✅ Clase principal para rutinas, sí se usa
-│   │   ├── Usuario.java              # ✅ Clase principal para usuarios, sí se usa
+│   │   ├── Rutina.java               # ✅ Clase principal para rutinas
+│   │   ├── Usuario.java              # ✅ Clase principal para usuarios
 │   │
 │   ├── dao/
 │   │   ├── EjercicioDAO.java         # ✅ Manejo persistencia de ejercicios
 │   │   ├── RutinaDAO.java            # ✅ Manejo persistencia de rutinas
 │   │   ├── UsuarioDAO.java           # ✅ Manejo persistencia de usuarios
-│   │   ├── GestorDeDatos.java        # ⚠️ Antiguo gestor, ya no se usa; se dejó solo como referencia
+│   │   ├── GestorDeDatos.java        # ⚠️ Obsoleto, ya no se usa (reemplazado por DAO)
 │   │
 │   ├── gui/
-│   │   ├── VentanaLogin.java         # ✅ Interfaz de login (sí se usa)
-│   │   ├── VentanaPrincipal.java     # ✅ Interfaz principal del sistema
+│   │   ├── VentanaLogin.java         # ✅ Interfaz de login
+│   │   ├── VentanaPrincipal.java     # ✅ Interfaz principal
 │   │   ├── VentanaRutina.java        # ✅ Gestión visual de rutinas
 │   │   ├── VentanaRegistro.java      # ✅ Registro de usuarios
 │   │
@@ -31,11 +31,12 @@ SistemaGimnasio/
 │   │   ├── Main.java                 # ✅ Punto de entrada del programa
 │
 │── .gitignore                        # Ignora archivos temporales y .dat
-│── rutina.txt                        # Ejemplo de archivo de rutinas (demo / pruebas)
-│── rutinas.dat                       # ⚠️ Archivo de datos binario (opcional, ya no necesario)
-│── usuarios.dat                      # ⚠️ Archivo de datos binario (opcional, ya no necesario)
-│── proyectoGimnasio.iml              # Archivo de configuración de IntelliJ
+│── rutina.txt                        # Archivo de ejemplo de rutinas
+│── rutinas.dat                       # ⚠️ Archivo binario opcional (se ignora en Git)
+│── usuarios.dat                      # ⚠️ Archivo binario opcional (se ignora en Git)
+│── proyectoGimnasio.iml              # Configuración de IntelliJ
 │── out/                              # Carpeta de compilación (ignorada en Git)
+                            # Carpeta de compilación (ignorada en Git)
 
 ```
 
