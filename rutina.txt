@@ -1,4 +1,0 @@
-modelo.Rutina: modelo.Rutina Básica
-
-Sentadilla (Pierna): Flexiona las rodillas bajando el cuerpo.
-Curl de bíceps (Brazo): Levanta la mancuerna hacia el hombro.

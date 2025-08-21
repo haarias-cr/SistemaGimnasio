@@ -1,6 +1,30 @@
-# IntelliJ IDEA
+# Archivos y carpetas de IntelliJ IDEA
 .idea/
 *.iml
 
-# Build output
+# Archivos compilados
 out/
+build/
+target/
+*.class
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+
+# Archivos de logs y temporales
+*.log
+*.tmp
+
+# Archivos de datos del proyecto (no versionables)
+/usuarios.dat
+/rutinas.dat
+/rutina.txt
+
+# Archivos de base de datos o serialización
+*.dat
+
+# Archivos de dependencias (si usas Gradle o Maven)
+.gradle/
+*.war
+*.ear
