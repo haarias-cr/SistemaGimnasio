@@ -1,0 +1,46 @@
+@startuml
+title Diagrama de Clases - Proyecto Gimnasio
+
+class Usuario {
+  - nombreUsuario : String
+  - contrasena : String
+  - nombreCompleto : String
+  + autenticar(usuario, contrasena) : boolean
+  + getNombreUsuario() : String
+  + getNombreCompleto() : String
+}
+
+class Ejercicio {
+  - nombre : String
+  - categoria : String
+  - descripcion : String
+  + mostrarDetalle() : String
+}
+
+class Rutina {
+  - nombre : String
+  - creador : String
+  - fechaCreacion : LocalDate
+  - ejercicios : List<Ejercicio>
+  + agregarEjercicio(e : Ejercicio)
+  + eliminarEjercicio(e : Ejercicio)
+  + estaVacia() : boolean
+  + exportarRutina() : String
+}
+
+class GestorDeDatos {
+  - usuarios : List<Usuario>
+  - rutinasPublicadas : List<Rutina>
+  + autenticarUsuario(user, pass) : Usuario
+  + registrarUsuario(user, pass, nombre)
+  + agregarRutina(r : Rutina)
+  + obtenerRutinas() : List<Rutina>
+  + guardarRutina(r : Rutina, archivo : String)
+}
+
+Usuario "1" --> "0..*" Rutina : crea
+Rutina "1" --> "0..*" Ejercicio : contiene
+GestorDeDatos "1" --> "0..*" Usuario : gestiona
+GestorDeDatos "1" --> "0..*" Rutina : almacena
+
+@enduml
